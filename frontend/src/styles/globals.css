@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: hsl(0 0% 3.9%);
+  --background: hsla(196, 77%, 15%, 1);
+  --body: hsla(282, 57%, 98%, 1);
+
+  --primary: hsla(150, 66%, 49%, 1);
+  --primary-foreground: hsl(0 0% 98%);
+
+  --heading: hsla(0, 0%, 100%, 1);
+
+  --card: hsla(196, 73%, 13%, 1);
+  --card-foreground: hsla(0, 0%, 100%, 1);
+
+  --destructive: hsla(4, 86%, 58%, 1);
+  --destructive-foreground: hsl(0 0% 98%);
+
+  --input: hsla(196, 44%, 24%, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: hsl(0 0% 3.9%);
+    --background: hsla(196, 77%, 15%, 1);
+    --body: hsla(282, 57%, 98%, 1);
+
+    --primary: hsla(150, 66%, 49%, 1);
+    --primary-foreground: hsl(0 0% 98%);
+
+    --heading: hsla(0, 0%, 100%, 1);
+
+    --card: hsla(196, 73%, 13%, 1);
+    --card-foreground: hsla(0, 0%, 100%, 1);
+
+    --destructive: hsla(4, 86%, 58%, 1);
+    --destructive-foreground: hsl(0 0% 98%);
+
+    --input: hsla(196, 44%, 24%, 1);
+  }
+}
+
+body {
+  background-color: var(--background) !important;
+  height: 100%;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.background_mask {
+  background-image: url('/images/bottom-bar.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
